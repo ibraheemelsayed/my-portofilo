@@ -122,14 +122,21 @@
     }
     .profile img{ width:100%; height:100%; object-fit:cover; }
 
-    /* PORTFOLIO */
-    #portfolio{ margin-bottom:32px; }
-    #portfolio h2{ margin:4px 0 12px; }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:20px;
+    /* Portfolio */
+    #portfolio, #notebooks {
+      margin-bottom: 36px;
+    }
+    
+    #portfolio h2, #notebooks h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    
+    #portfolio .grid,
+    #notebooks .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
     .project-card{
@@ -237,10 +244,28 @@
         <img src="https://media.licdn.com/dms/image/v2/C4E03AQEeMddDhlBxEQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517356000462?e=2147483647&v=beta&t=brg09plQ4MiUZ8_lg6rpTHJX-OAVq9aLrJTZG_09Umk" alt="ibraheem elsayed">
       </div>
     </section>
-
-    <!-- PORTFOLIO -->
     <section id="portfolio">
-      <h2>Portfolio</h2>
+      <h2>T-Shirts</h2>
+      <div class="grid">
+    <!-- NEW T-SHIRT PROJECT CARD -->
+    <article class="project-card">
+        <a class="thumb" href="./Cat Shirt.png" target="_blank" rel="noopener noreferrer">
+            <img src="./Cat Shirt.png" alt="T-shirt design" />
+        </a>
+        <div>
+            <h3 class="project-title">T-shirt Design</h3>
+            <p class="project-desc">High-quality merch-ready T-shirt mockup design.</p>
+        </div>
+        <div class="project-links">
+            <span class="chip">Merch</span>
+            <a class="chip" href="./Cat Shirt.png" target="_blank">Open</a>
+        </div>
+    </article>
+    </div>
+    </section>
+    <!-- PORTFOLIO -->
+    <section id="notebooks">
+      <h2>NoteBooks</h2>
       <div class="grid">
 
         <article class="project-card">
