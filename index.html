@@ -200,6 +200,39 @@ nav a:hover::after {
       color:#fff;
       text-decoration:none;
     }
+    
+    /* تأثير عام */
+.chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.09);
+  transition: all 0.25s ease;
+}
+
+/* RedBubble Hover */
+.chip.redbubble:hover {
+  background: #e41321;
+  box-shadow: 0 6px 18px rgba(228,19,33,0.6);
+  transform: translateY(-2px) scale(1.06);
+}
+
+/* KDP Hover */
+.chip.kdp:hover {
+  background: #00c853;
+  box-shadow: 0 6px 18px rgba(0,200,83,0.6);
+  transform: translateY(-2px) scale(1.06);
+}
+
+/* Preview Hover */
+.chip.preview:hover {
+  background: #2979ff;
+  box-shadow: 0 6px 18px rgba(41,121,255,0.6);
+  transform: translateY(-2px) scale(1.06);
+}
 
     /* ABOUT & CONTACT */
     section h2{ font-size:24px; font-weight:800; }
@@ -243,38 +276,6 @@ button:hover,
   box-shadow: 0 10px 30px rgba(92,108,255,0.35);
 }
 
-    /* تأثير عام */
-.chip {
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 13px;
-  color: #fff;
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.09);
-  transition: all 0.25s ease;
-}
-
-/* RedBubble Hover */
-.chip.redbubble:hover {
-  background: #e41321;
-  box-shadow: 0 6px 18px rgba(228,19,33,0.6);
-  transform: translateY(-2px) scale(1.06);
-}
-
-/* KDP Hover */
-.chip.kdp:hover {
-  background: #00c853;
-  box-shadow: 0 6px 18px rgba(0,200,83,0.6);
-  transform: translateY(-2px) scale(1.06);
-}
-
-/* Preview Hover */
-.chip.preview:hover {
-  background: #2979ff;
-  box-shadow: 0 6px 18px rgba(41,121,255,0.6);
-  transform: translateY(-2px) scale(1.06);
-}
 
   </style>
   
@@ -326,8 +327,8 @@ button:hover,
           <h3 class="project-title">FUNNY CHILDREN</h3>
           <p class="project-desc">Amazing Tshirt design for children</p>
           <div class="project-links">
-            <span class="chip">RedBubble</span>
-            <a class="chip" href="https://www.redbubble.com/shop/ap/176594109" target="_blank">Preview</a>
+            <span class="chip redbubble">RedBubble</span>
+            <a class="chip preview" href="https://www.redbubble.com/shop/ap/176594109" target="_blank">Preview</a>
           </div>
         </article>
 <article class="project-card">
