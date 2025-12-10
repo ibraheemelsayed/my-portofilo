@@ -206,7 +206,23 @@
       nav{ margin-top:8px; }
       body{ padding:20px; }
     }
+
+    /* HOVER ANIMATION FOR ALL INTERACTIVE ELEMENTS */
+a, button, .project-card, .chip, .thumb, .profile {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+a:hover, 
+button:hover, 
+.project-card:hover, 
+.chip:hover, 
+.thumb:hover, 
+.profile:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(92,108,255,0.35);
+}
   </style>
+  
 </head>
 
 <body>
