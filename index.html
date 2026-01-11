@@ -441,7 +441,7 @@ button:hover,
 
         <article class="project-card">
             <!-- THUMB -->
-            <a class="thumb" onclick="openNotebook2026Modal()">
+            <a href="javascript:void(0)" class="thumb" id="notebookThumb">
               <img src="https://m.media-amazon.com/images/I/61Op1n6PsjL._SY425_.jpg" alt="NOTEBOOK 2026">
             </a>
           
@@ -454,7 +454,7 @@ button:hover,
           
             <div class="project-links">
               <span class="chip kdp">KDP</span>
-              <a class="chip" onclick="openNotebook2026Modal()">Preview</a>
+              <a href="javascript:void(0)" class="chip" id="notebookPreview">Preview</a>
             </div>
           
             <!-- MODAL -->
@@ -463,40 +463,50 @@ button:hover,
                 <h3>Choose your store</h3>
           
                 <div class="countries">
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.com/dp/B0FYFFJ61K')">🇺🇸 US</div>
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.co.uk/dp/B0FYFFJ61K')">🇬🇧 UK</div>
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.de/dp/B0FYFFJ61K')">🇩🇪 DE</div>
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.fr/dp/B0FYFFJ61K')">🇫🇷 FR</div>
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.es/dp/B0FYFFJ61K')">🇪🇸 ES</div>
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.it/dp/B0FYFFJ61K')">🇮🇹 IT</div>
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.nl/dp/B0FYFFJ61K')">🇳🇱 NL</div>
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.pl/dp/B0FYFFJ61K')">🇵🇱 PL</div>
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.se/dp/B0FYFFJ61K')">🇸🇪 SE</div>
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.ie/dp/B0FYFFJ61K')">🇮🇪 IE</div>
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.co.jp/dp/B0FYFFJ61K')">🇯🇵 JP</div>
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.ca/dp/B0FYFFJ61K')">🇨🇦 CA</div>
-                  <div class="country" onclick="goNotebook2026('https://www.amazon.com.au/dp/B0FYFFJ61K')">🇦🇺 AU</div>
+                  <button class="country" data-url="https://www.amazon.com/dp/B0FYFFJ61K">🇺🇸 US</button>
+                  <button class="country" data-url="https://www.amazon.co.uk/dp/B0FYFFJ61K">🇬🇧 UK</button>
+                  <button class="country" data-url="https://www.amazon.de/dp/B0FYFFJ61K">🇩🇪 DE</button>
+                  <button class="country" data-url="https://www.amazon.fr/dp/B0FYFFJ61K">🇫🇷 FR</button>
+                  <button class="country" data-url="https://www.amazon.es/dp/B0FYFFJ61K">🇪🇸 ES</button>
+                  <button class="country" data-url="https://www.amazon.it/dp/B0FYFFJ61K">🇮🇹 IT</button>
+                  <button class="country" data-url="https://www.amazon.nl/dp/B0FYFFJ61K">🇳🇱 NL</button>
+                  <button class="country" data-url="https://www.amazon.pl/dp/B0FYFFJ61K">🇵🇱 PL</button>
+                  <button class="country" data-url="https://www.amazon.se/dp/B0FYFFJ61K">🇸🇪 SE</button>
+                  <button class="country" data-url="https://www.amazon.ie/dp/B0FYFFJ61K">🇮🇪 IE</button>
+                  <button class="country" data-url="https://www.amazon.co.jp/dp/B0FYFFJ61K">🇯🇵 JP</button>
+                  <button class="country" data-url="https://www.amazon.ca/dp/B0FYFFJ61K">🇨🇦 CA</button>
+                  <button class="country" data-url="https://www.amazon.com.au/dp/B0FYFFJ61K">🇦🇺 AU</button>
                 </div>
           
-                <div class="close" onclick="closeNotebook2026Modal()">Cancel</div>
+                <div class="close">Cancel</div>
               </div>
             </div>
           
+            <!-- SCRIPT -->
             <script>
-              function openNotebook2026Modal() {
-                document.getElementById('notebook2026Modal').classList.add('active');
-              }
+              const modal = document.getElementById('notebook2026Modal');
+              const thumb = document.getElementById('notebookThumb');
+              const preview = document.getElementById('notebookPreview');
+              const closeBtn = modal.querySelector('.close');
+              const countries = modal.querySelectorAll('.country');
           
-              function closeNotebook2026Modal() {
-                document.getElementById('notebook2026Modal').classList.remove('active');
-              }
+              // Open modal
+              thumb.addEventListener('click', () => modal.classList.add('active'));
+              preview.addEventListener('click', () => modal.classList.add('active'));
           
-              function goNotebook2026(url) {
-                window.open(url, '_blank');
-                closeNotebook2026Modal();
-              }
+              // Close modal
+              closeBtn.addEventListener('click', () => modal.classList.remove('active'));
+          
+              // Open store link
+              countries.forEach(btn => {
+                btn.addEventListener('click', () => {
+                  window.open(btn.dataset.url, '_blank');
+                  modal.classList.remove('active');
+                });
+              });
             </script>
           </article>
+
         
  <article class="project-card">
           <a class="thumb" href="https://www.amazon.com/she-believed-could-did-Notebook/dp/B0FYNVGJ31/ref=sr_1_4?dib=eyJ2IjoiMSJ9.f6PICz-BSA68zC0A4PzoLZGwokunZMz6N8Zexq_mQObGjHj071QN20LucGBJIEps.CS_UUgAGNl_NUksTyHQduGZDuGf2vOT6CC39kDuTKbo&dib_tag=se&qid=1765358691&refinements=p_27%3AMR.+ibraheem+elsayed+mohamed&s=books&sr=1-4&text=MR.+ibraheem+elsayed+mohamed"target="_blank">
