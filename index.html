@@ -519,67 +519,38 @@ button:hover,
 
         
     <article class="project-card">
-      <!-- THUMB -->
-      <a href="javascript:void(0)" class="thumb" id="girlBossThumb">
-        <img src="https://m.media-amazon.com/images/I/61bIQ5kl+zL._SY425_.jpg" alt="She Believed She Could So She Did">
-      </a>
-    
-      <div>
-        <h3 class="project-title">She Believed She Could So She Did</h3>
-        <p class="project-desc">
-          Journal, Diary & Notebook For the Everyday Girl Boss | Blank Lines | Size: 6×9 inches | 120 Pages
-        </p>
-      </div>
-    
-      <div class="project-links">
-        <span class="chip kdp">KDP</span>
-        <a href="javascript:void(0)" class="chip preview" id="girlBossPreview">Preview</a>
-      </div>
-    
-      <!-- MODAL -->
-      <div class="modal" id="girlBossModal">
-        <div class="modal-box">
-          <h3>Choose your store</h3>
-    
-          <div class="countries">
-            <button class="country" data-url="https://www.amazon.com/dp/B0FYNVGJ31">🇺🇸 US</button>
-            <button class="country" data-url="https://www.amazon.co.uk/dp/B0FYNVGJ31">🇬🇧 UK</button>
-            <button class="country" data-url="https://www.amazon.de/dp/B0FYNVGJ31">🇩🇪 DE</button>
-            <button class="country" data-url="https://www.amazon.fr/dp/B0FYNVGJ31">🇫🇷 FR</button>
-            <button class="country" data-url="https://www.amazon.es/dp/B0FYNVGJ31">🇪🇸 ES</button>
-            <button class="country" data-url="https://www.amazon.it/dp/B0FYNVGJ31">🇮🇹 IT</button>
-            <button class="country" data-url="https://www.amazon.ca/dp/B0FYNVGJ31">🇨🇦 CA</button>
-            <button class="country" data-url="https://www.amazon.com.au/dp/B0FYNVGJ31">🇦🇺 AU</button>
-          </div>
-    
-          <div class="close">Cancel</div>
-        </div>
-      </div>
-    
-      <!-- SCRIPT -->
-      <script>
-        const modal = document.getElementById('girlBossModal');
-        const thumb = document.getElementById('girlBossThumb');
-        const preview = document.getElementById('girlBossPreview');
-        const closeBtn = modal.querySelector('.close');
-        const countries = modal.querySelectorAll('.country');
-    
-        // Open modal
-        thumb.addEventListener('click', () => modal.classList.add('active'));
-        preview.addEventListener('click', () => modal.classList.add('active'));
-    
-        // Close modal
-        closeBtn.addEventListener('click', () => modal.classList.remove('active'));
-    
-        // Open store link
-        countries.forEach(btn => {
-          btn.addEventListener('click', () => {
-            window.open(btn.dataset.url, '_blank');
-            modal.classList.remove('active');
-          });
-        });
-      </script>
-    </article>
+  <a
+    class="thumb"
+    href="https://www.amazon.com/she-believed-could-did-Notebook/dp/B0FYNVGJ31/ref=sr_1_4?dib=eyJ2IjoiMSJ9.f6PICz-BSA68zC0A4PzoLZGwokunZMz6N8Zexq_mQObGjHj071QN20LucGBJIEps.CS_UUgAGNl_NUksTyHQduGZDuGf2vOT6CC39kDuTKbo&dib_tag=se&qid=1765358691&refinements=p_27%3AMR.+ibraheem+elsayed+mohamed&s=books&sr=1-4&text=MR.+ibraheem+elsayed+mohamed"
+    target="_blank"
+  >
+    <img
+      src="https://m.media-amazon.com/images/I/61bIQ5kl+zL._SY425_.jpg"
+      alt="Merch design"
+    />
+  </a>
+
+  <h3 class="project-title">
+    She Believed She Could So She Did
+  </h3>
+
+  <p class="project-desc">
+    Journal, Diary & Notebook for the Everyday Girl Boss (Boss Lady Gifts).
+    Journal gift for loved girls. Blank lined pages, size 6×9 inches, 120 pages.
+  </p>
+
+  <div class="project-links">
+    <span class="chip kdp">KDP</span>
+    <a
+      class="chip preview"
+      href="https://www.amazon.com/she-believed-could-did-Notebook/dp/B0FYNVGJ31/ref=sr_1_4?dib=eyJ2IjoiMSJ9.f6PICz-BSA68zC0A4PzoLZGwokunZMz6N8Zexq_mQObGjHj071QN20LucGBJIEps.CS_UUgAGNl_NUksTyHQduGZDuGf2vOT6CC39kDuTKbo&dib_tag=se&qid=1765358691&refinements=p_27%3AMR.+ibraheem+elsayed+mohamed&s=books&sr=1-4&text=MR.+ibraheem+elsayed+mohamed"
+      target="_blank"
+    >
+      Preview
+    </a>
+  </div>
+</article>
+
 
         
         <article class="project-card">
