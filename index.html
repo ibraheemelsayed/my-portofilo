@@ -449,76 +449,27 @@ button:hover,
       <h2>NoteBooks</h2>
       <div class="grid">
         <article class="project-card">
-  <!-- THUMB -->
-  <a class="thumb" onclick="openModalNotebookParis()">
-    <img
-      src="https://m.media-amazon.com/images/I/71qJ-nXn6DL._SL1499_.jpg"
-      alt="NOTEBOOK - PARIS"
-    />
+  <a class="thumb" onclick="openStoreModal(this)" data-asin="B0G8YVF7ZM">
+    <img src="https://m.media-amazon.com/images/I/71qJ-nXn6DL._SL1499_.jpg" alt="NOTEBOOK - PARIS">
   </a>
 
   <div>
     <h3 class="project-title">NOTEBOOK - PARIS</h3>
     <p class="project-desc">
-      Capture your thoughts, ideas, and daily notes in this beautifully designed
-      Paris-themed notebook. <br />
-      Size: 6x9 inches | 120 Pages
+      Capture your thoughts, ideas, and daily notes in this beautifully designed Paris-themed notebook.
+      <br />Size: 6x9 inches | 120 Pages
     </p>
   </div>
 
   <div class="project-links">
-    <span class="chip kdp">KDP</span>
-    <a class="chip" onclick="openModalNotebookParis()">Preview</a>
+    <span class="chip">KDP</span>
+    <a class="chip" onclick="openStoreModal(this)" data-asin="B0G8YVF7ZM">Preview</a>
   </div>
-
-  <!-- MODAL -->
-  <div class="modal" id="modalNotebookParis">
-    <div class="modal-box">
-      <h3>Choose your store</h3>
-
-      <div class="countries">
-        <div class="country" onclick="goNotebookParis('https://www.amazon.com/dp/B0G8YVF7ZM')">🇺🇸 US</div>
-        <div class="country" onclick="goNotebookParis('https://www.amazon.co.uk/dp/B0G8YVF7ZM')">🇬🇧 UK</div>
-        <div class="country" onclick="goNotebookParis('https://www.amazon.de/dp/B0G8YVF7ZM')">🇩🇪 DE</div>
-        <div class="country" onclick="goNotebookParis('https://www.amazon.fr/dp/B0G8YVF7ZM')">🇫🇷 FR</div>
-        <div class="country" onclick="goNotebookParis('https://www.amazon.es/dp/B0G8YVF7ZM')">🇪🇸 ES</div>
-        <div class="country" onclick="goNotebookParis('https://www.amazon.it/dp/B0G8YVF7ZM')">🇮🇹 IT</div>
-        <div class="country" onclick="goNotebookParis('https://www.amazon.nl/dp/B0G8YVF7ZM')">🇳🇱 NL</div>
-        <div class="country" onclick="goNotebookParis('https://www.amazon.pl/dp/B0G8YVF7ZM')">🇵🇱 PL</div>
-        <div class="country" onclick="goNotebookParis('https://www.amazon.se/dp/B0G8YVF7ZM')">🇸🇪 SE</div>
-        <div class="country" onclick="goNotebookParis('https://www.amazon.ie/dp/B0G8YVF7ZM')">🇮🇪 IE</div>
-        <div class="country" onclick="goNotebookParis('https://www.amazon.co.jp/dp/B0G8YVF7ZM')">🇯🇵 JP</div>
-        <div class="country" onclick="goNotebookParis('https://www.amazon.ca/dp/B0G8YVF7ZM')">🇨🇦 CA</div>
-        <div class="country" onclick="goNotebookParis('https://www.amazon.com.au/dp/B0G8YVF7ZM')">🇦🇺 AU</div>
-      </div>
-
-      <div class="close" onclick="closeModalNotebookParis()">Cancel</div>
-    </div>
-  </div>
-
-  <!-- SCRIPT -->
-  <script>
-    function openModalNotebookParis() {
-      document.getElementById('modalNotebookParis').classList.add('active');
-    }
-
-    function closeModalNotebookParis() {
-      document.getElementById('modalNotebookParis').classList.remove('active');
-    }
-
-    function goNotebookParis(url) {
-      window.open(url, '_blank');
-      closeModalNotebookParis();
-    }
-  </script>
 </article>
+
 <article class="project-card">
-  <!-- THUMB -->
-  <a class="thumb" onclick="openModalModernNoteBook()">
-    <img
-      src="https://m.media-amazon.com/images/I/61kaljjjXDL._SL1499_.jpg"
-      alt="NOTE BOOK: Modern Note Book"
-    />
+  <a class="thumb" onclick="openStoreModal(this)" data-asin="B0G8XQKFPX">
+    <img src="https://m.media-amazon.com/images/I/61kaljjjXDL._SL1499_.jpg" alt="NOTE BOOK: Modern Note Book">
   </a>
 
   <div>
@@ -529,242 +480,120 @@ button:hover,
   </div>
 
   <div class="project-links">
-    <span class="chip kdp">KDP</span>
-    <a class="chip" onclick="openModalModernNoteBook()">Preview</a>
+    <span class="chip">KDP</span>
+    <a class="chip" onclick="openStoreModal(this)" data-asin="B0G8XQKFPX">Preview</a>
   </div>
-
-  <!-- MODAL -->
-  <div class="modal" id="modalModernNoteBook">
-    <div class="modal-box">
-      <h3>Choose your store</h3>
-
-      <div class="countries">
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.com/dp/B0G8XQKFPX')">🇺🇸 US</div>
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.co.uk/dp/B0G8XQKFPX')">🇬🇧 UK</div>
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.de/dp/B0G8XQKFPX')">🇩🇪 DE</div>
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.fr/dp/B0G8XQKFPX')">🇫🇷 FR</div>
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.es/dp/B0G8XQKFPX')">🇪🇸 ES</div>
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.it/dp/B0G8XQKFPX')">🇮🇹 IT</div>
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.nl/dp/B0G8XQKFPX')">🇳🇱 NL</div>
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.pl/dp/B0G8XQKFPX')">🇵🇱 PL</div>
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.se/dp/B0G8XQKFPX')">🇸🇪 SE</div>
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.ie/dp/B0G8XQKFPX')">🇮🇪 IE</div>
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.co.jp/dp/B0G8XQKFPX')">🇯🇵 JP</div>
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.ca/dp/B0G8XQKFPX')">🇨🇦 CA</div>
-        <div class="country" onclick="goModernNoteBook('https://www.amazon.com.au/dp/B0G8XQKFPX')">🇦🇺 AU</div>
-      </div>
-
-      <div class="close" onclick="closeModalModernNoteBook()">Cancel</div>
-    </div>
-  </div>
-
-  <!-- SCRIPT -->
-  <script>
-    function openModalModernNoteBook() {
-      document.getElementById('modalModernNoteBook').classList.add('active');
-    }
-
-    function closeModalModernNoteBook() {
-      document.getElementById('modalModernNoteBook').classList.remove('active');
-    }
-
-    function goModernNoteBook(url) {
-      window.open(url, '_blank');
-      closeModalModernNoteBook();
-    }
-  </script>
 </article>
 
- <article class="project-card">
-  <!-- THUMB -->
-  <a class="thumb" onclick="openModalNotebook2026()">
-    <img
-      src="https://m.media-amazon.com/images/I/61Op1n6PsjL._SY425_.jpg"
-      alt="NOTEBOOK 2026"
-    />
+<article class="project-card">
+  <a class="thumb" onclick="openStoreModal(this)" data-asin="B0FYFFJ61K">
+    <img src="https://m.media-amazon.com/images/I/61Op1n6PsjL._SY425_.jpg" alt="NOTEBOOK 2026">
   </a>
 
   <div>
     <h3 class="project-title">NOTEBOOK 2026</h3>
     <p class="project-desc">
-      Journal, Diary & Notebook For the Everyday | Blank Lines |
-      Size: 6x9 inches | 120 Pages
+      Journal, Diary & Notebook For the Everyday | Blank Lines | Size: 6x9 inches | 120 Pages
     </p>
   </div>
 
   <div class="project-links">
-    <span class="chip kdp">KDP</span>
-    <a class="chip" onclick="openModalNotebook2026()">Preview</a>
+    <span class="chip">KDP</span>
+    <a class="chip" onclick="openStoreModal(this)" data-asin="B0FYFFJ61K">Preview</a>
   </div>
-
-  <!-- MODAL -->
-  <div class="modal" id="modalNotebook2026">
-    <div class="modal-box">
-      <h3>Choose your store</h3>
-
-      <div class="countries">
-        <div class="country" onclick="goNotebook2026('https://www.amazon.com/dp/B0FYFFJ61K')">🇺🇸 US</div>
-        <div class="country" onclick="goNotebook2026('https://www.amazon.co.uk/dp/B0FYFFJ61K')">🇬🇧 UK</div>
-        <div class="country" onclick="goNotebook2026('https://www.amazon.de/dp/B0FYFFJ61K')">🇩🇪 DE</div>
-        <div class="country" onclick="goNotebook2026('https://www.amazon.fr/dp/B0FYFFJ61K')">🇫🇷 FR</div>
-        <div class="country" onclick="goNotebook2026('https://www.amazon.es/dp/B0FYFFJ61K')">🇪🇸 ES</div>
-        <div class="country" onclick="goNotebook2026('https://www.amazon.it/dp/B0FYFFJ61K')">🇮🇹 IT</div>
-        <div class="country" onclick="goNotebook2026('https://www.amazon.nl/dp/B0FYFFJ61K')">🇳🇱 NL</div>
-        <div class="country" onclick="goNotebook2026('https://www.amazon.pl/dp/B0FYFFJ61K')">🇵🇱 PL</div>
-        <div class="country" onclick="goNotebook2026('https://www.amazon.se/dp/B0FYFFJ61K')">🇸🇪 SE</div>
-        <div class="country" onclick="goNotebook2026('https://www.amazon.ie/dp/B0FYFFJ61K')">🇮🇪 IE</div>
-        <div class="country" onclick="goNotebook2026('https://www.amazon.co.jp/dp/B0FYFFJ61K')">🇯🇵 JP</div>
-        <div class="country" onclick="goNotebook2026('https://www.amazon.ca/dp/B0FYFFJ61K')">🇨🇦 CA</div>
-        <div class="country" onclick="goNotebook2026('https://www.amazon.com.au/dp/B0FYFFJ61K')">🇦🇺 AU</div>
-      </div>
-
-      <div class="close" onclick="closeModalNotebook2026()">Cancel</div>
-    </div>
-  </div>
-
-  <!-- SCRIPT -->
-  <script>
-    function openModalNotebook2026() {
-      document.getElementById('modalNotebook2026').classList.add('active');
-    }
-
-    function closeModalNotebook2026() {
-      document.getElementById('modalNotebook2026').classList.remove('active');
-    }
-
-    function goNotebook2026(url) {
-      window.open(url, '_blank');
-      closeModalNotebook2026();
-    }
-  </script>
 </article>
 
 <article class="project-card">
-  <!-- THUMB -->
-  <a class="thumb" onclick="openModalGirlBoss()">
-    <img
-      src="https://m.media-amazon.com/images/I/61bIQ5kl+zL._SY425_.jpg"
-      alt="She Believed She Could So She Did Notebook"
-    />
+  <a class="thumb" onclick="openStoreModal(this)" data-asin="B0FYNVGJ31">
+    <img src="https://m.media-amazon.com/images/I/61bIQ5kl+zL._SY425_.jpg" alt="She Believed She Could So She Did Notebook">
   </a>
 
   <div>
     <h3 class="project-title">She Believed She Could So She Did</h3>
     <p class="project-desc">
-      Journal, Diary & Notebook for the Everyday Girl Boss (Boss Lady Gifts).
-      Journal gift for loved girls. Blank lined pages, size 6×9 inches, 120 pages.
+      Journal, Diary & Notebook for the Everyday Girl Boss (Boss Lady Gifts). Journal gift for loved girls.
+      Blank lined pages, size 6×9 inches, 120 pages.
     </p>
   </div>
 
   <div class="project-links">
-    <span class="chip kdp">KDP</span>
-    <a class="chip" onclick="openModalGirlBoss()">Preview</a>
+    <span class="chip">KDP</span>
+    <a class="chip" onclick="openStoreModal(this)" data-asin="B0FYNVGJ31">Preview</a>
   </div>
-
-  <!-- MODAL -->
-  <div class="modal" id="modalGirlBoss">
-    <div class="modal-box">
-      <h3>Choose your store</h3>
-
-      <div class="countries">
-        <div class="country" onclick="goGirlBoss('https://www.amazon.com/dp/B0FYNVGJ31')">🇺🇸 US</div>
-        <div class="country" onclick="goGirlBoss('https://www.amazon.co.uk/dp/B0FYNVGJ31')">🇬🇧 UK</div>
-        <div class="country" onclick="goGirlBoss('https://www.amazon.de/dp/B0FYNVGJ31')">🇩🇪 DE</div>
-        <div class="country" onclick="goGirlBoss('https://www.amazon.fr/dp/B0FYNVGJ31')">🇫🇷 FR</div>
-        <div class="country" onclick="goGirlBoss('https://www.amazon.es/dp/B0FYNVGJ31')">🇪🇸 ES</div>
-        <div class="country" onclick="goGirlBoss('https://www.amazon.it/dp/B0FYNVGJ31')">🇮🇹 IT</div>
-        <div class="country" onclick="goGirlBoss('https://www.amazon.nl/dp/B0FYNVGJ31')">🇳🇱 NL</div>
-        <div class="country" onclick="goGirlBoss('https://www.amazon.pl/dp/B0FYNVGJ31')">🇵🇱 PL</div>
-        <div class="country" onclick="goGirlBoss('https://www.amazon.se/dp/B0FYNVGJ31')">🇸🇪 SE</div>
-        <div class="country" onclick="goGirlBoss('https://www.amazon.ie/dp/B0FYNVGJ31')">🇮🇪 IE</div>
-        <div class="country" onclick="goGirlBoss('https://www.amazon.co.jp/dp/B0FYNVGJ31')">🇯🇵 JP</div>
-        <div class="country" onclick="goGirlBoss('https://www.amazon.ca/dp/B0FYNVGJ31')">🇨🇦 CA</div>
-        <div class="country" onclick="goGirlBoss('https://www.amazon.com.au/dp/B0FYNVGJ31')">🇦🇺 AU</div>
-      </div>
-
-      <div class="close" onclick="closeModalGirlBoss()">Cancel</div>
-    </div>
-  </div>
-
-  <script>
-    function openModalGirlBoss() {
-      document.getElementById('modalGirlBoss').classList.add('active');
-    }
-
-    function closeModalGirlBoss() {
-      document.getElementById('modalGirlBoss').classList.remove('active');
-    }
-
-    function goGirlBoss(url) {
-      window.open(url, '_blank');
-      closeModalGirlBoss();
-    }
-  </script>
 </article>
 
-     
-       <article class="project-card">
-  <!-- THUMB -->
-  <a class="thumb" onclick="openModalGirlBoss200()">
-    <img
-      src="https://m.media-amazon.com/images/I/41V5dCyc2mL._SY445_SX342_ControlCacheEqualizer_.jpg"
-      alt="She Believed She Could So She Did Notebook 200 Pages"
-    />
+<article class="project-card">
+  <a class="thumb" onclick="openStoreModal(this)" data-asin="B0FYGTWKPW">
+    <img src="https://m.media-amazon.com/images/I/41V5dCyc2mL._SY445_SX342_ControlCacheEqualizer_.jpg" alt="She Believed She Could So She Did Notebook 200 Pages">
   </a>
 
   <div>
     <h3 class="project-title">she believed she could so she did</h3>
     <p class="project-desc">
-      Journal, Diary & Notebook — 6×9 inches, 200 pages.
-      Perfect for girls & boss ladies.
+      Journal, Diary & Notebook — 6×9 inches, 200 pages. Perfect for girls & boss ladies.
     </p>
   </div>
 
   <div class="project-links">
-    <span class="chip kdp">KDP</span>
-    <a class="chip" onclick="openModalGirlBoss200()">Preview</a>
+    <span class="chip">KDP</span>
+    <a class="chip" onclick="openStoreModal(this)" data-asin="B0FYGTWKPW">Preview</a>
   </div>
-
-  <!-- MODAL -->
-  <div class="modal" id="modalGirlBoss200">
-    <div class="modal-box">
-      <h3>Choose your store</h3>
-
-      <div class="countries">
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.com/dp/B0FYGTWKPW')">🇺🇸 US</div>
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.co.uk/dp/B0FYGTWKPW')">🇬🇧 UK</div>
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.de/dp/B0FYGTWKPW')">🇩🇪 DE</div>
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.fr/dp/B0FYGTWKPW')">🇫🇷 FR</div>
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.es/dp/B0FYGTWKPW')">🇪🇸 ES</div>
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.it/dp/B0FYGTWKPW')">🇮🇹 IT</div>
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.nl/dp/B0FYGTWKPW')">🇳🇱 NL</div>
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.pl/dp/B0FYGTWKPW')">🇵🇱 PL</div>
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.se/dp/B0FYGTWKPW')">🇸🇪 SE</div>
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.ie/dp/B0FYGTWKPW')">🇮🇪 IE</div>
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.co.jp/dp/B0FYGTWKPW')">🇯🇵 JP</div>
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.ca/dp/B0FYGTWKPW')">🇨🇦 CA</div>
-        <div class="country" onclick="goGirlBoss200('https://www.amazon.com.au/dp/B0FYGTWKPW')">🇦🇺 AU</div>
-      </div>
-
-      <div class="close" onclick="closeModalGirlBoss200()">Cancel</div>
-    </div>
-  </div>
-
-  <script>
-    function openModalGirlBoss200() {
-      document.getElementById('modalGirlBoss200').classList.add('active');
-    }
-
-    function closeModalGirlBoss200() {
-      document.getElementById('modalGirlBoss200').classList.remove('active');
-    }
-
-    function goGirlBoss200(url) {
-      window.open(url, '_blank');
-      closeModalGirlBoss200();
-    }
-  </script>
 </article>
+
+
+        <div class="modal" id="storeModal">
+  <div class="modal-box">
+    <h3>Choose your store</h3>
+
+    <div class="countries" id="storeLinks"></div>
+
+    <div class="close" onclick="closeModal()">Cancel</div>
+  </div>
+</div>
+
+<script>
+const stores = [
+  { code: "US", flag: "🇺🇸", url: "https://www.amazon.com/dp/" },
+  { code: "UK", flag: "🇬🇧", url: "https://www.amazon.co.uk/dp/" },
+  { code: "DE", flag: "🇩🇪", url: "https://www.amazon.de/dp/" },
+  { code: "FR", flag: "🇫🇷", url: "https://www.amazon.fr/dp/" },
+  { code: "ES", flag: "🇪🇸", url: "https://www.amazon.es/dp/" },
+  { code: "IT", flag: "🇮🇹", url: "https://www.amazon.it/dp/" },
+  { code: "NL", flag: "🇳🇱", url: "https://www.amazon.nl/dp/" },
+  { code: "PL", flag: "🇵🇱", url: "https://www.amazon.pl/dp/" },
+  { code: "SE", flag: "🇸🇪", url: "https://www.amazon.se/dp/" },
+  { code: "IE", flag: "🇮🇪", url: "https://www.amazon.ie/dp/" },
+  { code: "JP", flag: "🇯🇵", url: "https://www.amazon.co.jp/dp/" },
+  { code: "CA", flag: "🇨🇦", url: "https://www.amazon.ca/dp/" },
+  { code: "AU", flag: "🇦🇺", url: "https://www.amazon.com.au/dp/" }
+
+];
+
+function openStoreModal(el) {
+  const asin = el.dataset.asin;
+  const container = document.getElementById("storeLinks");
+
+  container.innerHTML = "";
+
+  stores.forEach(store => {
+    const div = document.createElement("div");
+    div.className = "country";
+    div.textContent = `${store.flag} ${store.code}`;
+    div.onclick = () => {
+      window.open(store.url + asin, "_blank");
+      closeModal();
+    };
+    container.appendChild(div);
+  });
+
+  document.getElementById("storeModal").classList.add("active");
+}
+
+function closeModal() {
+  document.getElementById("storeModal").classList.remove("active");
+}
+</script>
+
 
         
       </div>
