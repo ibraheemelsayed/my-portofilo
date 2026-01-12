@@ -449,73 +449,70 @@ button:hover,
       <h2>NoteBooks</h2>
       <div class="grid">
         
-        <article class="project-card">
-            <!-- THUMB -->
-            <a href="javascript:void(0)" class="thumb" id="notebookThumb">
-              <img src="https://m.media-amazon.com/images/I/61Op1n6PsjL._SY425_.jpg" alt="NOTEBOOK 2026">
-            </a>
-          
-            <div>
-              <h3 class="project-title">NOTEBOOK 2026</h3>
-              <p class="project-desc">
-                Journal, Diary & Notebook For the Everyday | Blank Lines | Size: 6x9 inches | 120 Pages
-              </p>
-            </div>
-          
-            <div class="project-links">
-              <span class="chip kdp">KDP</span>
-              <a href="javascript:void(0)" class="chip" id="notebookPreview">Preview</a>
-            </div>
-          
-            <!-- MODAL -->
-            <div class="modal" id="notebook2026Modal">
-              <div class="modal-box">
-                <h3>Choose your store</h3>
-          
-                <div class="countries">
-                  <button class="country" data-url="https://www.amazon.com/dp/B0FYFFJ61K">🇺🇸 US</button>
-                  <button class="country" data-url="https://www.amazon.co.uk/dp/B0FYFFJ61K">🇬🇧 UK</button>
-                  <button class="country" data-url="https://www.amazon.de/dp/B0FYFFJ61K">🇩🇪 DE</button>
-                  <button class="country" data-url="https://www.amazon.fr/dp/B0FYFFJ61K">🇫🇷 FR</button>
-                  <button class="country" data-url="https://www.amazon.es/dp/B0FYFFJ61K">🇪🇸 ES</button>
-                  <button class="country" data-url="https://www.amazon.it/dp/B0FYFFJ61K">🇮🇹 IT</button>
-                  <button class="country" data-url="https://www.amazon.nl/dp/B0FYFFJ61K">🇳🇱 NL</button>
-                  <button class="country" data-url="https://www.amazon.pl/dp/B0FYFFJ61K">🇵🇱 PL</button>
-                  <button class="country" data-url="https://www.amazon.se/dp/B0FYFFJ61K">🇸🇪 SE</button>
-                  <button class="country" data-url="https://www.amazon.ie/dp/B0FYFFJ61K">🇮🇪 IE</button>
-                  <button class="country" data-url="https://www.amazon.co.jp/dp/B0FYFFJ61K">🇯🇵 JP</button>
-                  <button class="country" data-url="https://www.amazon.ca/dp/B0FYFFJ61K">🇨🇦 CA</button>
-                  <button class="country" data-url="https://www.amazon.com.au/dp/B0FYFFJ61K">🇦🇺 AU</button>
-                </div>
-          
-                <div class="close">Cancel</div>
-              </div>
-            </div>
-          
-            <!-- SCRIPT -->
-            <script>
-              const modal = document.getElementById('notebook2026Modal');
-              const thumb = document.getElementById('notebookThumb');
-              const preview = document.getElementById('notebookPreview');
-              const closeBtn = modal.querySelector('.close');
-              const countries = modal.querySelectorAll('.country');
-          
-              // Open modal
-              thumb.addEventListener('click', () => modal.classList.add('active'));
-              preview.addEventListener('click', () => modal.classList.add('active'));
-          
-              // Close modal
-              closeBtn.addEventListener('click', () => modal.classList.remove('active'));
-          
-              // Open store link
-              countries.forEach(btn => {
-                btn.addEventListener('click', () => {
-                  window.open(btn.dataset.url, '_blank');
-                  modal.classList.remove('active');
-                });
-              });
-            </script>
-          </article>
+       <article class="project-card">
+  <!-- THUMB -->
+  <a class="thumb" onclick="openModalNotebook2026()">
+    <img
+      src="https://m.media-amazon.com/images/I/61Op1n6PsjL._SY425_.jpg"
+      alt="NOTEBOOK 2026"
+    />
+  </a>
+
+  <div>
+    <h3 class="project-title">NOTEBOOK 2026</h3>
+    <p class="project-desc">
+      Journal, Diary & Notebook For the Everyday | Blank Lines |
+      Size: 6x9 inches | 120 Pages
+    </p>
+  </div>
+
+  <div class="project-links">
+    <span class="chip kdp">KDP</span>
+    <a class="chip" onclick="openModalNotebook2026()">Preview</a>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modalNotebook2026">
+    <div class="modal-box">
+      <h3>Choose your store</h3>
+
+      <div class="countries">
+        <div class="country" onclick="goNotebook2026('https://www.amazon.com/dp/B0FYFFJ61K')">🇺🇸 US</div>
+        <div class="country" onclick="goNotebook2026('https://www.amazon.co.uk/dp/B0FYFFJ61K')">🇬🇧 UK</div>
+        <div class="country" onclick="goNotebook2026('https://www.amazon.de/dp/B0FYFFJ61K')">🇩🇪 DE</div>
+        <div class="country" onclick="goNotebook2026('https://www.amazon.fr/dp/B0FYFFJ61K')">🇫🇷 FR</div>
+        <div class="country" onclick="goNotebook2026('https://www.amazon.es/dp/B0FYFFJ61K')">🇪🇸 ES</div>
+        <div class="country" onclick="goNotebook2026('https://www.amazon.it/dp/B0FYFFJ61K')">🇮🇹 IT</div>
+        <div class="country" onclick="goNotebook2026('https://www.amazon.nl/dp/B0FYFFJ61K')">🇳🇱 NL</div>
+        <div class="country" onclick="goNotebook2026('https://www.amazon.pl/dp/B0FYFFJ61K')">🇵🇱 PL</div>
+        <div class="country" onclick="goNotebook2026('https://www.amazon.se/dp/B0FYFFJ61K')">🇸🇪 SE</div>
+        <div class="country" onclick="goNotebook2026('https://www.amazon.ie/dp/B0FYFFJ61K')">🇮🇪 IE</div>
+        <div class="country" onclick="goNotebook2026('https://www.amazon.co.jp/dp/B0FYFFJ61K')">🇯🇵 JP</div>
+        <div class="country" onclick="goNotebook2026('https://www.amazon.ca/dp/B0FYFFJ61K')">🇨🇦 CA</div>
+        <div class="country" onclick="goNotebook2026('https://www.amazon.com.au/dp/B0FYFFJ61K')">🇦🇺 AU</div>
+      </div>
+
+      <div class="close" onclick="closeModalNotebook2026()">Cancel</div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function openModalNotebook2026() {
+      document.getElementById('modalNotebook2026').classList.add('active');
+    }
+
+    function closeModalNotebook2026() {
+      document.getElementById('modalNotebook2026').classList.remove('active');
+    }
+
+    function goNotebook2026(url) {
+      window.open(url, '_blank');
+      closeModalNotebook2026();
+    }
+  </script>
+</article>
+
 <article class="project-card">
   <!-- THUMB -->
   <a class="thumb" onclick="openModalGirlBoss()">
@@ -579,53 +576,70 @@ button:hover,
   </script>
 </article>
 
-        
-    <article class="project-card">
-  <a
-    class="thumb"
-    href="https://www.amazon.com/she-believed-could-did-Notebook/dp/B0FYNVGJ31/ref=sr_1_4?dib=eyJ2IjoiMSJ9.f6PICz-BSA68zC0A4PzoLZGwokunZMz6N8Zexq_mQObGjHj071QN20LucGBJIEps.CS_UUgAGNl_NUksTyHQduGZDuGf2vOT6CC39kDuTKbo&dib_tag=se&qid=1765358691&refinements=p_27%3AMR.+ibraheem+elsayed+mohamed&s=books&sr=1-4&text=MR.+ibraheem+elsayed+mohamed"
-    target="_blank"
-  >
+     
+       <article class="project-card">
+  <!-- THUMB -->
+  <a class="thumb" onclick="openModalGirlBoss200()">
     <img
-      src="https://m.media-amazon.com/images/I/61bIQ5kl+zL._SY425_.jpg"
-      alt="Merch design"
+      src="https://m.media-amazon.com/images/I/41V5dCyc2mL._SY445_SX342_ControlCacheEqualizer_.jpg"
+      alt="She Believed She Could So She Did Notebook 200 Pages"
     />
   </a>
 
-  <h3 class="project-title">
-    She Believed She Could So She Did
-  </h3>
-
-  <p class="project-desc">
-    Journal, Diary & Notebook for the Everyday Girl Boss (Boss Lady Gifts).
-    Journal gift for loved girls. Blank lined pages, size 6×9 inches, 120 pages.
-  </p>
+  <div>
+    <h3 class="project-title">she believed she could so she did</h3>
+    <p class="project-desc">
+      Journal, Diary & Notebook — 6×9 inches, 200 pages.
+      Perfect for girls & boss ladies.
+    </p>
+  </div>
 
   <div class="project-links">
     <span class="chip kdp">KDP</span>
-    <a
-      class="chip preview"
-      href="https://www.amazon.com/she-believed-could-did-Notebook/dp/B0FYNVGJ31/ref=sr_1_4?dib=eyJ2IjoiMSJ9.f6PICz-BSA68zC0A4PzoLZGwokunZMz6N8Zexq_mQObGjHj071QN20LucGBJIEps.CS_UUgAGNl_NUksTyHQduGZDuGf2vOT6CC39kDuTKbo&dib_tag=se&qid=1765358691&refinements=p_27%3AMR.+ibraheem+elsayed+mohamed&s=books&sr=1-4&text=MR.+ibraheem+elsayed+mohamed"
-      target="_blank"
-    >
-      Preview
-    </a>
+    <a class="chip" onclick="openModalGirlBoss200()">Preview</a>
   </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modalGirlBoss200">
+    <div class="modal-box">
+      <h3>Choose your store</h3>
+
+      <div class="countries">
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.com/dp/B0FYGTWKPW')">🇺🇸 US</div>
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.co.uk/dp/B0FYGTWKPW')">🇬🇧 UK</div>
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.de/dp/B0FYGTWKPW')">🇩🇪 DE</div>
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.fr/dp/B0FYGTWKPW')">🇫🇷 FR</div>
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.es/dp/B0FYGTWKPW')">🇪🇸 ES</div>
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.it/dp/B0FYGTWKPW')">🇮🇹 IT</div>
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.nl/dp/B0FYGTWKPW')">🇳🇱 NL</div>
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.pl/dp/B0FYGTWKPW')">🇵🇱 PL</div>
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.se/dp/B0FYGTWKPW')">🇸🇪 SE</div>
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.ie/dp/B0FYGTWKPW')">🇮🇪 IE</div>
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.co.jp/dp/B0FYGTWKPW')">🇯🇵 JP</div>
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.ca/dp/B0FYGTWKPW')">🇨🇦 CA</div>
+        <div class="country" onclick="goGirlBoss200('https://www.amazon.com.au/dp/B0FYGTWKPW')">🇦🇺 AU</div>
+      </div>
+
+      <div class="close" onclick="closeModalGirlBoss200()">Cancel</div>
+    </div>
+  </div>
+
+  <script>
+    function openModalGirlBoss200() {
+      document.getElementById('modalGirlBoss200').classList.add('active');
+    }
+
+    function closeModalGirlBoss200() {
+      document.getElementById('modalGirlBoss200').classList.remove('active');
+    }
+
+    function goGirlBoss200(url) {
+      window.open(url, '_blank');
+      closeModalGirlBoss200();
+    }
+  </script>
 </article>
 
-
-        
-        <article class="project-card">
-          <a class="thumb" href="https://www.amazon.com/dp/B0FYGTWKPW"target="_blank">
-            <img src="https://m.media-amazon.com/images/I/41V5dCyc2mL._SY445_SX342_ControlCacheEqualizer_.jpg" alt="Merch design">
-          </a>
-          <h3 class="project-title">she believed she could so she did</h3>
-          <p class="project-desc">Journal, Diary & Notebook — 6×9 inches, 200 pages. Perfect for girls & boss ladies.</p>
-          <div class="project-links">
-            <span class="chip kdp">KDP</span>
-            <a class="chip preview" href="https://www.amazon.com/dp/B0FYGTWKPW"target="_blank">Preview</a>
-          </div>
-        </article>
         
       </div>
     </section>
