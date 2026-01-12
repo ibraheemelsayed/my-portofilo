@@ -448,8 +448,72 @@ button:hover,
     <section id="notebooks">
       <h2>NoteBooks</h2>
       <div class="grid">
-        
-       <article class="project-card">
+        <article class="project-card">
+  <!-- THUMB -->
+  <a class="thumb" onclick="openModalNotebookParis()">
+    <img
+      src="https://m.media-amazon.com/images/I/71qJ-nXn6DL._SL1499_.jpg"
+      alt="NOTEBOOK - PARIS"
+    />
+  </a>
+
+  <div>
+    <h3 class="project-title">NOTEBOOK - PARIS</h3>
+    <p class="project-desc">
+      Capture your thoughts, ideas, and daily notes in this beautifully designed
+      Paris-themed notebook. <br />
+      Size: 6x9 inches | 120 Pages
+    </p>
+  </div>
+
+  <div class="project-links">
+    <span class="chip kdp">KDP</span>
+    <a class="chip" onclick="openModalNotebookParis()">Preview</a>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modalNotebookParis">
+    <div class="modal-box">
+      <h3>Choose your store</h3>
+
+      <div class="countries">
+        <div class="country" onclick="goNotebookParis('https://www.amazon.com/dp/B0G8YVF7ZM')">🇺🇸 US</div>
+        <div class="country" onclick="goNotebookParis('https://www.amazon.co.uk/dp/B0G8YVF7ZM')">🇬🇧 UK</div>
+        <div class="country" onclick="goNotebookParis('https://www.amazon.de/dp/B0G8YVF7ZM')">🇩🇪 DE</div>
+        <div class="country" onclick="goNotebookParis('https://www.amazon.fr/dp/B0G8YVF7ZM')">🇫🇷 FR</div>
+        <div class="country" onclick="goNotebookParis('https://www.amazon.es/dp/B0G8YVF7ZM')">🇪🇸 ES</div>
+        <div class="country" onclick="goNotebookParis('https://www.amazon.it/dp/B0G8YVF7ZM')">🇮🇹 IT</div>
+        <div class="country" onclick="goNotebookParis('https://www.amazon.nl/dp/B0G8YVF7ZM')">🇳🇱 NL</div>
+        <div class="country" onclick="goNotebookParis('https://www.amazon.pl/dp/B0G8YVF7ZM')">🇵🇱 PL</div>
+        <div class="country" onclick="goNotebookParis('https://www.amazon.se/dp/B0G8YVF7ZM')">🇸🇪 SE</div>
+        <div class="country" onclick="goNotebookParis('https://www.amazon.ie/dp/B0G8YVF7ZM')">🇮🇪 IE</div>
+        <div class="country" onclick="goNotebookParis('https://www.amazon.co.jp/dp/B0G8YVF7ZM')">🇯🇵 JP</div>
+        <div class="country" onclick="goNotebookParis('https://www.amazon.ca/dp/B0G8YVF7ZM')">🇨🇦 CA</div>
+        <div class="country" onclick="goNotebookParis('https://www.amazon.com.au/dp/B0G8YVF7ZM')">🇦🇺 AU</div>
+      </div>
+
+      <div class="close" onclick="closeModalNotebookParis()">Cancel</div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function openModalNotebookParis() {
+      document.getElementById('modalNotebookParis').classList.add('active');
+    }
+
+    function closeModalNotebookParis() {
+      document.getElementById('modalNotebookParis').classList.remove('active');
+    }
+
+    function goNotebookParis(url) {
+      window.open(url, '_blank');
+      closeModalNotebookParis();
+    }
+  </script>
+</article>
+
+ <article class="project-card">
   <!-- THUMB -->
   <a class="thumb" onclick="openModalNotebook2026()">
     <img
