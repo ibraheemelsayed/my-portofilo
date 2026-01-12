@@ -516,6 +516,68 @@ button:hover,
               });
             </script>
           </article>
+<article class="project-card">
+  <!-- THUMB -->
+  <a class="thumb" onclick="openModalGirlBoss()">
+    <img
+      src="https://m.media-amazon.com/images/I/61bIQ5kl+zL._SY425_.jpg"
+      alt="She Believed She Could So She Did Notebook"
+    />
+  </a>
+
+  <div>
+    <h3 class="project-title">She Believed She Could So She Did</h3>
+    <p class="project-desc">
+      Journal, Diary & Notebook for the Everyday Girl Boss (Boss Lady Gifts).
+      Journal gift for loved girls. Blank lined pages, size 6×9 inches, 120 pages.
+    </p>
+  </div>
+
+  <div class="project-links">
+    <span class="chip kdp">KDP</span>
+    <a class="chip" onclick="openModalGirlBoss()">Preview</a>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modalGirlBoss">
+    <div class="modal-box">
+      <h3>Choose your store</h3>
+
+      <div class="countries">
+        <div class="country" onclick="goGirlBoss('https://www.amazon.com/dp/B0FYNVGJ31')">🇺🇸 US</div>
+        <div class="country" onclick="goGirlBoss('https://www.amazon.co.uk/dp/B0FYNVGJ31')">🇬🇧 UK</div>
+        <div class="country" onclick="goGirlBoss('https://www.amazon.de/dp/B0FYNVGJ31')">🇩🇪 DE</div>
+        <div class="country" onclick="goGirlBoss('https://www.amazon.fr/dp/B0FYNVGJ31')">🇫🇷 FR</div>
+        <div class="country" onclick="goGirlBoss('https://www.amazon.es/dp/B0FYNVGJ31')">🇪🇸 ES</div>
+        <div class="country" onclick="goGirlBoss('https://www.amazon.it/dp/B0FYNVGJ31')">🇮🇹 IT</div>
+        <div class="country" onclick="goGirlBoss('https://www.amazon.nl/dp/B0FYNVGJ31')">🇳🇱 NL</div>
+        <div class="country" onclick="goGirlBoss('https://www.amazon.pl/dp/B0FYNVGJ31')">🇵🇱 PL</div>
+        <div class="country" onclick="goGirlBoss('https://www.amazon.se/dp/B0FYNVGJ31')">🇸🇪 SE</div>
+        <div class="country" onclick="goGirlBoss('https://www.amazon.ie/dp/B0FYNVGJ31')">🇮🇪 IE</div>
+        <div class="country" onclick="goGirlBoss('https://www.amazon.co.jp/dp/B0FYNVGJ31')">🇯🇵 JP</div>
+        <div class="country" onclick="goGirlBoss('https://www.amazon.ca/dp/B0FYNVGJ31')">🇨🇦 CA</div>
+        <div class="country" onclick="goGirlBoss('https://www.amazon.com.au/dp/B0FYNVGJ31')">🇦🇺 AU</div>
+      </div>
+
+      <div class="close" onclick="closeModalGirlBoss()">Cancel</div>
+    </div>
+  </div>
+
+  <script>
+    function openModalGirlBoss() {
+      document.getElementById('modalGirlBoss').classList.add('active');
+    }
+
+    function closeModalGirlBoss() {
+      document.getElementById('modalGirlBoss').classList.remove('active');
+    }
+
+    function goGirlBoss(url) {
+      window.open(url, '_blank');
+      closeModalGirlBoss();
+    }
+  </script>
+</article>
 
         
     <article class="project-card">
