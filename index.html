@@ -512,6 +512,68 @@ button:hover,
     }
   </script>
 </article>
+<article class="project-card">
+  <!-- THUMB -->
+  <a class="thumb" onclick="openModalModernNoteBook()">
+    <img
+      src="https://m.media-amazon.com/images/I/61kaljjjXDL._SL1499_.jpg"
+      alt="NOTE BOOK: Modern Note Book"
+    />
+  </a>
+
+  <div>
+    <h3 class="project-title">NOTE BOOK: Modern Note Book</h3>
+    <p class="project-desc">
+      Softcover Notebook (6x9 inches, 120 Pages)
+    </p>
+  </div>
+
+  <div class="project-links">
+    <span class="chip kdp">KDP</span>
+    <a class="chip" onclick="openModalModernNoteBook()">Preview</a>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modalModernNoteBook">
+    <div class="modal-box">
+      <h3>Choose your store</h3>
+
+      <div class="countries">
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.com/dp/B0G8XQKFPX')">🇺🇸 US</div>
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.co.uk/dp/B0G8XQKFPX')">🇬🇧 UK</div>
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.de/dp/B0G8XQKFPX')">🇩🇪 DE</div>
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.fr/dp/B0G8XQKFPX')">🇫🇷 FR</div>
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.es/dp/B0G8XQKFPX')">🇪🇸 ES</div>
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.it/dp/B0G8XQKFPX')">🇮🇹 IT</div>
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.nl/dp/B0G8XQKFPX')">🇳🇱 NL</div>
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.pl/dp/B0G8XQKFPX')">🇵🇱 PL</div>
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.se/dp/B0G8XQKFPX')">🇸🇪 SE</div>
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.ie/dp/B0G8XQKFPX')">🇮🇪 IE</div>
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.co.jp/dp/B0G8XQKFPX')">🇯🇵 JP</div>
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.ca/dp/B0G8XQKFPX')">🇨🇦 CA</div>
+        <div class="country" onclick="goModernNoteBook('https://www.amazon.com.au/dp/B0G8XQKFPX')">🇦🇺 AU</div>
+      </div>
+
+      <div class="close" onclick="closeModalModernNoteBook()">Cancel</div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function openModalModernNoteBook() {
+      document.getElementById('modalModernNoteBook').classList.add('active');
+    }
+
+    function closeModalModernNoteBook() {
+      document.getElementById('modalModernNoteBook').classList.remove('active');
+    }
+
+    function goModernNoteBook(url) {
+      window.open(url, '_blank');
+      closeModalModernNoteBook();
+    }
+  </script>
+</article>
 
  <article class="project-card">
   <!-- THUMB -->
